@@ -48,6 +48,13 @@ E-mail: contato@objetivasoftware.com.br.
 	- [Shell](#64---)
 	- [Resposta](#65---Resposta---Bairros)
 
+- [7 - Infraestruturas dos imóveis](#6---Infraestruturas-dos-imóveis)
+	- [PHP](#71---)
+	- [Python](#72---)
+	- [Node](#73---)
+	- [Shell](#74---)
+	- [Resposta](#75---Resposta---Bairros)
+
 
 
 ## 1 - Informações da Imobiliária
@@ -826,7 +833,108 @@ E-mail: contato@objetivasoftware.com.br.
 		}
 	]
 }
-  
+
+```
+
+## 7 - Infraestruturas dos imóveis
+### 7.1 - <a href="#Endpoints"><img src="/img/php.svg" /></a>
+```php
+
+<?php
+    
+    $client = new http\Client;
+    $request = new http\Client\Request;
+    
+    $request->setRequestUrl('https://api.gestorimob.com.br/infraestruturas');
+    $request->setRequestMethod('GET');
+    $request->setHeaders([
+        'token-cliente' => 'xxxxxxxxxxx',
+        'Content-Type' => 'application/json'
+    ]);
+    
+    $client->enqueue($request)->send();
+    $response = $client->getResponse();
+    
+    echo $response->getBody();
+      
+```
+### 7.2 - <a href="#Endpoints"><img src="/img/python.svg" /></a>
+```Python
+
+    import requests
+    
+    url = "https://api.gestorimob.com.br/infraestruturas"
+    
+    headers = {
+        "token-cliente": "xxxxxxxxxxx",
+        "Content-Type": "application/json"
+    }
+    
+    response = requests.request("GET", url, headers=headers)
+    
+    print(response.text)
+      
+```
+### 7.3 - <a href="#Endpoints"><img src="/img/nodejs.svg" /></a>
+```js
+
+    import axios from "axios";
+    
+    const options = {
+        method: 'GET',
+        url: 'https://api.gestorimob.com.br/infraestruturas',
+        headers: {
+            'token-cliente': 'xxxxxxxxxxx',
+            'Content-Type': 'application/json'
+        }
+    };
+    
+    axios.request(options).then(function (response) {
+        console.log(response.data);
+    }).catch(function (error) {
+        console.error(error);
+    });
+      
+```
+### 7.4 - <a href="#Endpoints"><img src="/img/shell.svg" /></a>
+```bash
+    curl --request GET \
+        --url https://api.gestorimob.com.br/infraestruturas \
+        --header 'Content-Type: application/json' \
+        --header 'token-cliente: xxxxxxxxxxx'
+```
+### [7.5 - Resposta - Infraestruturas dos imóveis](#Endpoints)
+```js
+
+{
+    "r": "ok",
+    "data": [
+    {
+        "group": "Acabamentos",
+        "data": [
+            {
+                "label": "Calefação",
+                "value": 104
+            },
+            {
+                "label": "Entrada para ar condicionado",
+                "value": 9
+            }
+        ]
+    },
+    {
+        "group": "Apartamento",
+        "data": [
+            {
+                "label": "Adega",
+                "value": 96
+            },
+            {
+                "label": "Ar condicionado",
+                "value": 76
+            }
+        ]
+    },
 
 ```
 

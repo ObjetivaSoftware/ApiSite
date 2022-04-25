@@ -420,7 +420,40 @@ E-mail: contato@objetivasoftware.com.br.
                 }
             ],
             "videos": [],
-            "infraestruturas": []
+            "infraestruturas": [
+                {
+                    "nome": "Acabamentos",
+                    "codigo": 4,
+                    "infras": [
+                        {
+                          "nome": "Piso porcelanato",
+                          "codigo": 289
+                        }
+                    ]
+                },
+                {
+                  "nome": "Apartamento",
+                  "codigo": 2,
+                  "infras": [
+                        {
+                            "nome": "Churrasqueira",
+                            "codigo": 290
+                        },
+                        {
+                            "nome": "Interfone",
+                            "codigo": 291
+                        },
+                        {
+                            "nome": "Sacada",
+                            "codigo": 292
+                        },
+                        {
+                            "nome": "Sala",
+                            "codigo": 293
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }

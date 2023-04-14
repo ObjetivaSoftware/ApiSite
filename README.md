@@ -70,7 +70,7 @@ E-mail: contato@objetivasoftware.com.br.
     $body = new http\Message\Body;
     $body->addForm(NULL, NULL);
     
-    $request->setRequestUrl('https://api.gestorimob.com.br/imobiliaria');
+    $request->setRequestUrl('https://apisiteterceiro.gestorimob.com.br/imobiliaria');
     $request->setRequestMethod('GET');
     $request->setBody($body);
     
@@ -89,7 +89,7 @@ E-mail: contato@objetivasoftware.com.br.
 
     import requests
     
-    url = "https://api.gestorimob.com.br/imobiliaria"
+    url = "https://apisiteterceiro.gestorimob.com.br/imobiliaria"
     
     payload = ""
     headers = {
@@ -109,7 +109,7 @@ E-mail: contato@objetivasoftware.com.br.
     
     var options = {
         method: 'GET',
-        url: 'https://api.gestorimob.com.br/imobiliaria',
+        url: 'https://apisiteterceiro.gestorimob.com.br/imobiliaria',
         headers: {
             'token-cliente': 'XXXXXXXXXXXXXX',
             'content-type': 'multipart/form-data; boundary=---011000010111000001101001'
@@ -127,7 +127,7 @@ E-mail: contato@objetivasoftware.com.br.
 ```bash
 
     curl --request GET \
-        --url https://api.gestorimob.com.br/imobiliaria \
+        --url https://apisiteterceiro.gestorimob.com.br/imobiliaria \
         --header 'content-type: multipart/form-data; boundary=---011000010111000001101001' \
         --header 'token-cliente: XXXXXXXXXXXXXX'
     
@@ -219,7 +219,7 @@ E-mail: contato@objetivasoftware.com.br.
     $body = new http\Message\Body;
     $body->append('{}');
     
-    $request->setRequestUrl('https://api.gestorimob.com.br/buscar');
+    $request->setRequestUrl('https://apisiteterceiro.gestorimob.com.br/buscar');
     $request->setRequestMethod('GET');
     $request->setBody($body);
     
@@ -239,7 +239,7 @@ E-mail: contato@objetivasoftware.com.br.
 
     import requests
     
-    url = "https://api.gestorimob.com.br/buscar"
+    url = "https://apisiteterceiro.gestorimob.com.br/buscar"
     
     payload = "{}"
     headers = {
@@ -259,7 +259,7 @@ E-mail: contato@objetivasoftware.com.br.
     
     var options = {
         method: 'GET',
-        url: 'https://api.gestorimob.com.br/buscar',
+        url: 'https://apisiteterceiro.gestorimob.com.br/buscar',
         headers: {
             'token-cliente': 'XXXXXXXXXXXXXXXXXXXX',
             'content-type': 'application/json'
@@ -277,7 +277,7 @@ E-mail: contato@objetivasoftware.com.br.
 ### 2.4 - <a href="#Endpoints"><img src="/img/shell.svg" /></a>
 ```bash
     curl --request GET \
-        --url https://api.gestorimob.com.br/buscar \
+        --url https://apisiteterceiro.gestorimob.com.br/buscar \
         --header 'content-type: application/json' \
         --header 'token-cliente: XXXXXXXXXXXXXXXXXXXX' \
         --data '{}'
@@ -478,7 +478,7 @@ E-mail: contato@objetivasoftware.com.br.
   $body = new http\Message\Body;
   $body->append('{}');
   
-  $request->setRequestUrl('https://api.gestorimob.com.br/acoes');
+  $request->setRequestUrl('https://apisiteterceiro.gestorimob.com.br/acoes');
   $request->setRequestMethod('GET');
   $request->setBody($body);
   
@@ -498,7 +498,7 @@ E-mail: contato@objetivasoftware.com.br.
 
     import requests
     
-    url = "https://api.gestorimob.com.br/acoes"
+    url = "https://apisiteterceiro.gestorimob.com.br/acoes"
     
     payload = "{}"
     headers = {
@@ -518,7 +518,7 @@ E-mail: contato@objetivasoftware.com.br.
     
     var options = {
         method: 'GET',
-        url: 'https://api.gestorimob.com.br/acoes',
+        url: 'https://apisiteterceiro.gestorimob.com.br/acoes',
         headers: {
             'token-cliente': 'XXXXXXXXXXXXXXXXXXXX',
             'content-type': 'application/json'
@@ -537,7 +537,7 @@ E-mail: contato@objetivasoftware.com.br.
 ### 3.4 - <a href="#Endpoints"><img src="/img/shell.svg" /></a>
 ```bash
     curl --request GET \
-        --url https://api.gestorimob.com.br/acoes \
+        --url https://apisiteterceiro.gestorimob.com.br/acoes \
         --header 'content-type: application/json' \
         --header 'token-cliente: XXXXXXXXXXXXXXXXXXXX' \
         --data '{}'
@@ -577,7 +577,7 @@ E-mail: contato@objetivasoftware.com.br.
     $body = new http\Message\Body;
     $body->append('{}');
     
-    $request->setRequestUrl('https://api.gestorimob.com.br/tipos');
+    $request->setRequestUrl('https://apisiteterceiro.gestorimob.com.br/tipos');
     $request->setRequestMethod('GET');
     $request->setBody($body);
     
@@ -597,7 +597,7 @@ E-mail: contato@objetivasoftware.com.br.
 
     import requests
     
-    url = "https://api.gestorimob.com.br/tipos"
+    url = "https://apisiteterceiro.gestorimob.com.br/tipos"
     
     payload = "{}"
     headers = {
@@ -617,7 +617,7 @@ E-mail: contato@objetivasoftware.com.br.
     
     var options = {
         method: 'GET',
-        url: 'https://api.gestorimob.com.br/tipos',
+        url: 'https://apisiteterceiro.gestorimob.com.br/tipos',
         headers: {'token-cliente': 'xxxxxxxxxxxxxxxx', 'content-type': 'application/json'},
         data: {}
     };
@@ -639,7 +639,7 @@ E-mail: contato@objetivasoftware.com.br.
 ```bash
 
     curl --request GET \
-        --url https://api.gestorimob.com.br/tipos \
+        --url https://apisiteterceiro.gestorimob.com.br/tipos \
         --header 'content-type: application/json' \
         --header 'token-cliente: xxxxxxxxxxxxxxxx' \
         --data '{}'
@@ -675,7 +675,7 @@ E-mail: contato@objetivasoftware.com.br.
     $body = new http\Message\Body;
     $body->append('{}');
     
-    $request->setRequestUrl('https://api.gestorimob.com.br/cidades');
+    $request->setRequestUrl('https://apisiteterceiro.gestorimob.com.br/cidades');
     $request->setRequestMethod('GET');
     $request->setBody($body);
     
@@ -695,7 +695,7 @@ E-mail: contato@objetivasoftware.com.br.
 
     import requests
     
-    url = "https://api.gestorimob.com.br/cidades"
+    url = "https://apisiteterceiro.gestorimob.com.br/cidades"
     
     payload = "{}"
     headers = {
@@ -715,7 +715,7 @@ E-mail: contato@objetivasoftware.com.br.
     
     var options = {
         method: 'GET',
-        url: 'https://api.gestorimob.com.br/cidades',
+        url: 'https://apisiteterceiro.gestorimob.com.br/cidades',
         headers: {'token-cliente': 'xxxxxxxxxxx', 'content-type': 'application/json'},
         data: {}
     };
@@ -730,7 +730,7 @@ E-mail: contato@objetivasoftware.com.br.
 ### 5.4 - <a href="#Endpoints"><img src="/img/shell.svg" /></a>
 ```bash
     curl --request GET \
-        --url https://api.gestorimob.com.br/cidades \
+        --url https://apisiteterceiro.gestorimob.com.br/cidades \
         --header 'content-type: application/json' \
         --header 'token-cliente: xxxxxxxxxxx' \
         --data '{}'
@@ -761,7 +761,7 @@ E-mail: contato@objetivasoftware.com.br.
     $body = new http\Message\Body;
     $body->append('{}');
     
-    $request->setRequestUrl('https://api.gestorimob.com.br/bairros');
+    $request->setRequestUrl('https://apisiteterceiro.gestorimob.com.br/bairros');
     $request->setRequestMethod('GET');
     $request->setBody($body);
     
@@ -781,7 +781,7 @@ E-mail: contato@objetivasoftware.com.br.
 
     import requests
     
-    url = "https://api.gestorimob.com.br/bairros"
+    url = "https://apisiteterceiro.gestorimob.com.br/bairros"
     
     payload = "{}"
     headers = {
@@ -801,7 +801,7 @@ E-mail: contato@objetivasoftware.com.br.
     
     var options = {
     method: 'GET',
-    url: 'https://api.gestorimob.com.br/bairros',
+    url: 'https://apisiteterceiro.gestorimob.com.br/bairros',
     headers: {'token-cliente': 'xxxxxxxxxxx', 'content-type': 'application/json'},
     data: {}
     };
@@ -816,7 +816,7 @@ E-mail: contato@objetivasoftware.com.br.
 ### 6.4 - <a href="#Endpoints"><img src="/img/shell.svg" /></a>
 ```bash
     curl --request GET \
-        --url https://api.gestorimob.com.br/bairros \
+        --url https://apisiteterceiro.gestorimob.com.br/bairros \
         --header 'content-type: application/json' \
         --header 'token-cliente: xxxxxxxxxxx' \
         --data '{}'
@@ -845,7 +845,7 @@ E-mail: contato@objetivasoftware.com.br.
     $client = new http\Client;
     $request = new http\Client\Request;
     
-    $request->setRequestUrl('https://api.gestorimob.com.br/infraestruturas');
+    $request->setRequestUrl('https://apisiteterceiro.gestorimob.com.br/infraestruturas');
     $request->setRequestMethod('GET');
     $request->setHeaders([
         'token-cliente' => 'xxxxxxxxxxx',
@@ -863,7 +863,7 @@ E-mail: contato@objetivasoftware.com.br.
 
     import requests
     
-    url = "https://api.gestorimob.com.br/infraestruturas"
+    url = "https://apisiteterceiro.gestorimob.com.br/infraestruturas"
     
     headers = {
         "token-cliente": "xxxxxxxxxxx",
@@ -882,7 +882,7 @@ E-mail: contato@objetivasoftware.com.br.
     
     const options = {
         method: 'GET',
-        url: 'https://api.gestorimob.com.br/infraestruturas',
+        url: 'https://apisiteterceiro.gestorimob.com.br/infraestruturas',
         headers: {
             'token-cliente': 'xxxxxxxxxxx',
             'Content-Type': 'application/json'
@@ -899,7 +899,7 @@ E-mail: contato@objetivasoftware.com.br.
 ### 7.4 - <a href="#Endpoints"><img src="/img/shell.svg" /></a>
 ```bash
     curl --request GET \
-        --url https://api.gestorimob.com.br/infraestruturas \
+        --url https://apisiteterceiro.gestorimob.com.br/infraestruturas \
         --header 'Content-Type: application/json' \
         --header 'token-cliente: xxxxxxxxxxx'
 ```

@@ -3,12 +3,23 @@
 Para consumir a API do site, precisa ser informado um **token-cliente**.
 Para conseguir acesso a esse token do cliente, é necessário entrar em contato com o suporte do sistema.
 
-Na coluna (basico->ativo) em imobiliárias e nas colunas (basico->ativo->codigo, basico->tipo->rural, basico->valores->alteracaoprevia, basico->outros->exclusividade) em imóveis,
-qando um elemento é associada ao valor "1", pode-se inferir que a resposta é negativa. Por outro lado, ao encontrar o valor "2", pode-se concluir que a resposta é positiva.
+
+Na coluna **basico->ativo** em imobiliárias e nas colunas 
+- **basico->ativo->codigo**
+- **basico->tipo->rural**
+- **basico->valores->alteracaoprevia**
+- **basico->outros->exclusividade**
+
+Em imóveis, quando um elemento é associada ao valor **1**, pode-se inferir que a resposta é **negativa**. 
+
+Por outro lado, ao encontrar o valor **2**, pode-se concluir que a resposta é **positiva**.
+
 
 E-mail: contato@objetivasoftware.com.br.
 
-##### Endpoints
+___
+
+## Endpoints
 - [1 - Informações da Imobiliária](#1---Informações-da-Imobiliária)
 	- [PHP](#11---)
 	- [Python](#12---)

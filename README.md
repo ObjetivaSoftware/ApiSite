@@ -5,7 +5,7 @@ Para conseguir acesso a esse token do cliente, é necessário entrar em contato 
 
 Na coluna (basico->ativo) em imobiliárias e nas colunas (basico->ativo->codigo, basico->tipo->rural, basico->valores->alteracaoprevia, basico->outros->exclusividade) em imóveis,
 qando um elemento é associada ao valor "1", pode-se inferir que a resposta é negativa. Por outro lado, ao encontrar o valor "2", pode-se concluir que a resposta é positiva.
-zz
+
 E-mail: contato@objetivasoftware.com.br.
 
 ##### Endpoints
